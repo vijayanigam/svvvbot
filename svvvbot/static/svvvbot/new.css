@@ -1,0 +1,128 @@
+.navs {
+    width: 370px;
+    height: 55px;
+    background-color: #0466ff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+img {
+    width:45px;
+    height: 45px;
+    margin-top:5px;
+    margin-left:18px;
+}
+
+.chatbot {
+    width: 350px;
+    height: 380px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    /*border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-style: solid;
+    border-color: #1e1e2a;*/
+    padding: 10px;
+    background: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.botMessage {
+    /*margin-top:90px*/
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 40%;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    background-color: #e9eef4;
+    border-radius: 20px;
+    border-top-left-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.userMessage {
+    margin-top: 5px;
+    margin-left: 57%;
+    margin-right: 9px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    background-color: #0466ff;
+    border-radius: 20px;
+font-size: 14px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chatbot::-webkit-scrollbar {
+    display: none;
+}
+
+.chatbot::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.search {
+    /*width: 419px;
+    height: 60px;
+    background-color: #151515;
+    position: fixed;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: 423px;*/
+    width: 370px;
+    height: 55px;
+    background-color: #F4F6F7;
+    border-top-color: #F4F6F7;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* border-style: solid;
+    border-color: #1e1e2a;*/
+}
+
+.submit{
+    width: 370px;
+    height: 28px;
+    /*margin-top: 19px;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;*/
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: none;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.text_box{
+    width: 366px;
+    height: 28px;
+    /*margin-top: 19px;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;*/
+    border-top-style: solid;
+    border-top-color:#e9eef4;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+
+    outline: none;
+}
+.botimg{
+ width:25px;
+    height: 25px;
+
+    margin-left:0px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=   , initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'svvvbot/new.css' %}">
+</head>
+<body style="background-color:#b5c3cb; ">
+<div class="navs">
+<img src="{% static 'svvvbot/1.png' %}" alt="">
+    <h4 style="margin-left:75px;margin-top:-34px; color:white;font-family: Arial, Helvetica, sans-serif;">CHATBOT</h4>
+</div>
+    <div class="chatbot">
+<!--        <img class= "botimg"src="{% static 'svvvbot/1.png' %}" alt="">-->
+       <div class="botMessage">  My name is Bot.<span>&#128400;</span><br> I am your personal assistant.
+            I am here to help you know more about our University.
+            Let me know How can I help you!<br> <br> You can ask questions related to<span>&#128073;</span><br>
+            <br> Admission<span>&#127891</span><br>Academics<span >&#9997;</span><br>Activities<span >&#127942;</span>
+        </div>
+        <div class="botMessage">If you want to exit, type Bye!" </div>
+         {% if d %}
+        {% for i in m2 %}
+            {% if forloop.counter|divisibleby:2 %}
+        <div>
+<!--                <img class= "botimg"src="{% static 'svvvbot/1.png' %}" alt="">-->
+                <div class="botMessage"> {{ i }}
+                </div>
+            {% else %}<div class="userMessage"> {{ i }}</div>{% endif %}
+        {% endfor %}
+
+        <div class="botMessage" ><a href="http://www.svvv.edu.in/uploaded_files/Information_Brochure21.04.2020.pdf " target="_blank">Click here</div>
+        {% else %}
+    {% for i in m2 %}
+        {% if forloop.counter|divisibleby:2 %}
+<!--        <img class= "botimg"src="{% static 'svvvbot/1.png' %}" alt="">-->
+        <div class="botMessage"> {{ i }}
+        </div>
+        {% else %}<div class="userMessage " > {{ i }}</div>{% endif %}
+        {% endfor %}
+
+        {% endif %}
+    </div>
+<!--<div class="chatbot">-->
+
+<!--  {% for i in m2 %}-->
+<!--&lt;!&ndash;<p>in m2</p>&ndash;&gt;-->
+
+
+<!--            {% if i %}-->
+<!--            &lt;!&ndash;<p>true</p>&ndash;&gt;-->
+<!--               <div class="botMessage"> {{ i }} </div>-->
+<!--            {% else %}-->
+<!--            &lt;!&ndash;<p>false</p>&ndash;&gt;-->
+<!--                <div class="userMessage"> {{ i }}</div>-->
+<!--           {% endif %}-->
+
+<!--   {% endfor %}-->
+
+
+    </div>
+    <div class="search">
+        <form method="post" action="/chatbot/enter">
+             <input  class=" text_box" type="text" name="text1" placeholder="     Type your msg here..........">
+            {% csrf_token %}
+            <input class="submit" type="submit">
+        </form>
+   </div>
+
+</body>
+</html>
